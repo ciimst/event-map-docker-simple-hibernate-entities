@@ -59,7 +59,7 @@ pipeline {
                             nexusUrl: '177.177.0.236:8081',
                             groupId: 'com.imst.event.map.hibernate',
                             version: '1.4.2',
-                            repository: 'event-map-hibernate-entities',
+                            repository: 'event-map-docker-simple-hibernate-entities',
 				//repository: 'maven-public',
                             credentialsId: 'nexus',
                             artifacts: [
