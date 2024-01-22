@@ -29,19 +29,19 @@ pipeline {
 
         }
 
-        stage("Maven Build") {
+        //stage("Maven Build") {
 
-            steps {
+          //  steps {
 
-                script {
+            //    script {
                     //sh 'mvn install clean'
                     //sh "mvn clean package -DskipTests=true"
 
-                }
+            //    }
 
-            }
+          //  }
 
-        }
+       // }
 
          stage("Publish to Nexus Repository Manager") {
             steps {
