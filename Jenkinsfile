@@ -4,7 +4,7 @@ pipeline {
 
     tools {
 
-        maven "maven 3.9.1"
+        maven "maven 3.5.0"
 
     }
 
@@ -17,7 +17,8 @@ pipeline {
 
                 script {
 
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '13daaff0-994d-486d-8d1b-0f050daeeb26', url: 'https://github.com/ayseayparcasiImst/event-map-hibernate-entities.git/']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '13daaff0-994d-486d-8d1b-0f050daeeb26', url: 'https://github.com/ciimst/event-map-docker-simple-hibernate-entities.git']])		    
+	        
         sh 'mvn wrapper:wrapper'
 		/*sh './mvnw clean compile'*/
                 sh 'mvn clean install'
