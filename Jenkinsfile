@@ -63,7 +63,7 @@ pipeline {
 				repository: 'maven-public',
                             credentialsId: 'nexus',
                             artifacts: [
-                                [artifactId: 'event-map-docker-simple-hibernate-entities',
+                                [artifactId: 'event-map-hibernate-entities',
                                 classifier: '',
                                 file: artifactPath,
                                 type: pom.packaging],
