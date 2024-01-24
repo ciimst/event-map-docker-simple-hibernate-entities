@@ -17,7 +17,7 @@ pipeline {
 
                 script {
 
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '13daaff0-994d-486d-8d1b-0f050daeeb26', url: 'https://github.com/ciimst/event-map-docker-simple-hibernate-entities.git']])		    
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '13daaff0-994d-486d-8d1b-0f050daeeb26', url: 'https://github.com/ciimst/event-map-hibernate-entities.git']])		    
 	        
         sh 'mvn wrapper:wrapper'
 		/*sh './mvnw clean compile'*/
@@ -63,7 +63,7 @@ pipeline {
 				//repository: 'maven-public',
                             credentialsId: 'nexus',
                             artifacts: [
-                                [artifactId: 'event-map-docker-simple-hibernate-entities',
+                                [artifactId: 'event-map-hibernate-entities',
                                 classifier: '',
                                 file: artifactPath,
                                 type: pom.packaging],
