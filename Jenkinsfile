@@ -58,7 +58,7 @@ pipeline {
                             protocol: 'http',
                             nexusUrl: '177.177.0.236:8081',
                             groupId: 'com.imst.event.map.hibernate',
-                            version: '1.4.30',
+                            version: '1.4.35',
                             repository: 'event-map-hibernate-entities',
 				//repository: 'maven-public',
                             credentialsId: 'nexus',
